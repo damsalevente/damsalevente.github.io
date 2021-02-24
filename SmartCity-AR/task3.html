@@ -9,7 +9,7 @@
             <a-assets>
                 <audio id="helmet_sound" src="../assets/rickroll.mp3" response-type="arraybuffer" autoplay="true" loop></audio>
                 <a-asset-item id="helmet" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/KhronosGroup/glTF-Sample-Models/master/2.0/SciFiHelmet/glTF/SciFiHelmet.gltf"></a-asset-item>
-                <video id="test" autoplay="true" loop="true" src="../assets/fitnesstest.mp4"></video>
+                <video id="fitnesstest" autoplay="true" loop="true" src="../assets/fitnesstest.mp4"></video>
             </a-assets>
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
@@ -28,7 +28,7 @@
                 </a-entity>
               
             </a-marker>
-            <a-entity video="src:#test; loop: true; width: 16; height:9"  scale="120 120 120"></a-video>
+            <a-video src="#fitnesstest" width="16", height="9" position = "0 0 -20"></a-video>
             <!-- add a camera to the scene that renders the objects for us -->
             <a-entity camera></a-entity>
         </a-scene>
