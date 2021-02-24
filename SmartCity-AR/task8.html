@@ -75,7 +75,7 @@
                 } else if (document.msExitFullscreen) {
                     document.msExitFullscreen();
                 }
-                fullbutton.setAttribute("src", "assets/fullscreen.png");
+                fullbutton.setAttribute("src", "../assets/fullscreen.png");
                 fullscreen = 0;
               }
             });
@@ -94,12 +94,12 @@
     <button id="mutebutton" style='position: absolute; bottom: 10px' hidden>Play</button>
   </div>
   <div style='position: absolute; bottom: 5px; left: 30px; width:100%; text-align: right; z-index: 1;'>
-    <input type="image" id="fullscreen" src="assets/fullscreen.png" style='position: absolute; bottom: 0px; right: 35px;'></input>
+    <input type="image" id="fullscreen" src="../assets/fullscreen.png" style='position: absolute; bottom: 0px; right: 35px;'></input>
   </div>
   <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam" vr-mode-ui="enabled: false">
     <a-entity id="mouseCursor" cursor="rayOrigin: mouse" raycaster="objects: .intersectable; useWorldCoordinates: true;"></a-entity>
     <a-assets>
-      <video id="Video_Asset_0" autoplay="false" loop crossorigin="anonymous" src="assets/your_sample.mp4" webkit-playsinline playsinline controls muted></video>
+      <video id="Video_Asset_0" autoplay="false" loop crossorigin="anonymous" src="../assets/fitnesstest.mp4" webkit-playsinline playsinline controls muted></video>
     </a-assets>
     <a-marker id="marker" preset="hiro" emitevents="true" button>
       <a-video src="#Video_Asset_0" id="Video_0" class="intersectable" width="1" height="1" position="0 0 0" rotation="0 0 0" color="#FFFFFF" transparent=False></a-video>
