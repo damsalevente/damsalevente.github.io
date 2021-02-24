@@ -8,8 +8,11 @@
         <a-scene embedded arjs>
             <!-- handle hiro marker -->
             <a-marker preset='hiro'>
-                <a-text scale="120 120 120" value="Hello world"></a-text>
                     <!-- add a torus in a red box --> 
+                    <a-entity
+  text="value: Hello, A-Frame!; color: #BBB"
+  position="-0.9 0.2 -3"
+  scale="1.5 1.5 1.5"></a-entity>
             </a-marker>
 
             <!-- add a camera to the scene that renders the objects for us -->
