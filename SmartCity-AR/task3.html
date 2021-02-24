@@ -9,8 +9,12 @@
             <a-assets>
                 <audio id="helmet_sound" src="/assets/rickroll.mp3" response-type="arraybuffer" autoplay="true" loop></audio>
                 <a-asset-item id="helmet" src="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/KhronosGroup/glTF-Sample-Models/master/2.0/SciFiHelmet/glTF/SciFiHelmet.gltf"></a-asset-item>
+                 <a-assets>
+                <video id="test" autoplay loop="true" src="fitnesstest.mp4"></video>
+                </a-assets>
             </a-assets>
-
+            <a-video src="#test" width="16" height="9" position="0 0 -20"></a-video>
+            <a-video src="fitnesstest.mp4"></a-video>
             <!-- handle hiro marker -->
             <a-marker preset="hiro">
                 <!-- raw.githack.com serves raw files directly from GitHub,
