@@ -26,10 +26,9 @@
                 <!-- second entity: reference to the above audio -->
                 <a-entity sound="src: #helmet_sound; volume: 1; loop: true">
                 </a-entity>
-                <a-video src="#test" width="16" height="9" position="0 0 -20"></a-video>
+                <a-entity video="src:#test; loop: true; width: 16; height:9" position="0 0 -20"></a-video>
             </a-marker>
 
-            <a-video src="#test" width="16" height="9" position="0 0 20"></a-video>
             <!-- add a camera to the scene that renders the objects for us -->
             <a-entity camera></a-entity>
         </a-scene>
